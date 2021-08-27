@@ -1,0 +1,7 @@
+.section {
+  border-right: 1px solid #777;
+}
+
+.section:last-child {
+  border: 0;
+}
