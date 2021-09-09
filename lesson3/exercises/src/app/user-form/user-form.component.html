@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 [class.blue-bg]="username === ''">User Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="bgcolor"></label>
+        <input type="text" [(ngModel)]="bgcolor" name="bgcolor">
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username"
+               required
+               [(ngModel)]="username"
+               name="username"
+               >
+      </div>
+      <button type="submit" class="btn btn-success" (click)="onSubmit()">Submit</button>
+    </form>
+    <p></p>
+
+
+    <p>Your username is {{ username }}</p>
+</div>
